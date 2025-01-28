@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #007bff;
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0056b3;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+body {
+  font-family: "Montserrat", serif;
+  background-color: #f5f6fa;
+}
+.Table {
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  overflow-x: auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+.right-headr {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-weight: 500;
+}
+.right-headr .entries {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.right-headr .entries select {
+  padding: 8px 9px;
+  border-radius: 8px;
+  background-color: #64646431;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.right-headr .search {
+  position: relative;
+}
+.right-headr .search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: rgba(158, 158, 158, 1);
+}
+.right-headr .search input {
+  padding: 8px 30px;
+  border: 1px solid rgba(158, 158, 158, 1);
+  border-radius: 8px;
+  width: 220px;
+  outline: none;
+}
+
+.add-customer {
+  background: rgba(98, 77, 227, 1);
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.1s ease-in-out;
+}
+.add-customer:hover {
+  background: #6c5ce7;
+}
+/*  */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+}
+
+th {
+  color: rgba(0, 0, 0, 1);
+  font-weight: 700;
+  line-height: 17px;
+  position: relative;
+}
+th:nth-child(2)::after,
+th:nth-child(3)::after,
+th:nth-child(4)::after,
+th:nth-child(7)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 10px;
+  height: 15px;
+  border-radius: 50%;
+  background: url(imge/Vector.svg) no-repeat center center / cover;
+}
+table tbody tr:nth-child(odd) {
+  background-color: rgba(247, 246, 254, 1);
+}
+.product {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* white-space: nowrap; */
+}
+.product img {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.status {
+  padding: 8px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  line-height: 15px;
+  white-space: nowrap;
+  /* display: inline-block; */
+}
+.delivered {
+  background: #e1f8e9;
+  color: #00c853;
+}
+.Process {
+  background: #fff8e1;
+  color: rgba(205, 98, 0, 1);
+}
+.Canceled {
+  background: #ffebee;
+  color: rgba(163, 13, 17, 1);
+}
+table tbody .actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+table tbody .actions button {
+  border: none;
+  background: none;
+  width: 24px;
+  height: 30px;
+  cursor: pointer;
+  font-size: larger;
+}
+/*  */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.pagination span {
+  display: inline-block;
+  color: rgba(158, 158, 158, 1);
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.pagination span:hover {
+  color: #6c5ce7;
+}
+.pagination button {
+  padding: 8px 12px;
+  border: none;
+  background: #f5f6fa;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+.pagination button.active,
+.pagination button:hover {
+  background: #6c5ce7;
+  color: white;
+  border-color: #6c5ce7;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .Table {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+  .header {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .right-headr .search input {
+    width: auto;
+  }
+  .add-customer {
+    justify-content: center;
+    width: 100%;
+  }
+  table {
+    font-size: 12px;
+    width: max-content;
+  }
+}

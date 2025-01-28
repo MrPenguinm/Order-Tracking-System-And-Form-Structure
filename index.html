@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link rel="icon" href="pe.icon" />
+    <title>Order Tracking System</title>
+  </head>
+  <body>
+    <!-- Table-Section -->
+    <section class="Table">
+      <div class="container">
+        <!-- Header-Table -->
+        <div class="header">
+          <div class="right-headr">
+            <div class="entries">
+              <span>Show</span>
+              <select>
+                <option>10</option>
+                <option>20</option>
+                <option>30</option>
+                <option>40</option>
+              </select>
+              <span>entries</span>
+            </div>
+            <div class="search">
+              <input type="search" placeholder="Search..." />
+              <span class="search-icon"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></span>
+            </div>
+          </div>
+          <button class="add-customer">
+            <i class="fa-solid fa-plus"></i> Add Customer
+          </button>
+        </div>
+        <!-- Table -->
+        <table>
+          <thead>
+            <tr>
+              <th>Tracking ID</th>
+              <th>Product</th>
+              <th>Customer</th>
+              <th>Date</th>
+              <th>Amount</th>
+              <th>Payment Mode</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <!--  -->
+          <tbody>
+            <!-- 1 -->
+            <tr>
+              <td>#20462</td>
+              <td>
+                <div class="product">
+                  <img src="imge/Hat.jpg" alt="Hat" />
+                  <span>Hat</span>
+                </div>
+              </td>
+              <td>Matt Dickerson</td>
+              <td>13/05/2022</td>
+              <td>$4.95</td>
+              <td>Transfer Bank</td>
+              <td><span class="status delivered">Delivered</span></td>
+              <td class="actions">
+                <button>
+                  <i
+                    class="fa-regular fa-pen-to-square"
+                    style="color: rgba(98, 77, 227, 1)"></i>
+                </button>
+                <button>
+                  <i
+                    class="fa-solid fa-trash"
+                    style="color: rgba(163, 13, 17, 1)"></i>
+                </button>
+              </td>
+            </tr>
+            <!-- 2 -->
+            <tr>
+              <td>#18933</td>
+              <td>
+                <div class="product">
+                  <img src="imge/Laptop.png" alt="Laptop" />
+                  <span>Laptop</span>
+                </div>
+              </td>
+              <td>Wiktoria</td>
+              <td>22/05/2022</td>
+              <td>$8.95</td>
+              <td>Cash on Delivery</td>
+              <td><span class="status delivered">Delivered</span></td>
+              <td class="actions">
+                <button>
+                  <i
+                    class="fa-regular fa-pen-to-square"
+                    style="color: rgba(98, 77, 227, 1)"></i>
+                </button>
+                <button>
+                  <i
+                    class="fa-solid fa-trash"
+                    style="color: rgba(163, 13, 17, 1)"></i>
+                </button>
+              </td>
+            </tr>
+            <!-- 3 -->
+            <tr>
+              <td>#45169</td>
+              <td>
+                <div class="product">
+                  <img src="imge/Phone.png" alt="Phone" />
+                  <span>Phone</span>
+                </div>
+              </td>
+              <td>Trixie Byrd</td>
+              <td>15/06/2022</td>
+              <td>$1,149.95</td>
+              <td>Cash on Delivery</td>
+              <td><span class="status Process">Process</span></td>
+              <td class="actions">
+                <button>
+                  <i
+                    class="fa-regular fa-pen-to-square"
+                    style="color: rgba(98, 77, 227, 1)"></i>
+                </button>
+                <button>
+                  <i
+                    class="fa-solid fa-trash"
+                    style="color: rgba(163, 13, 17, 1)"></i>
+                </button>
+              </td>
+            </tr>
+            <!-- 4 -->
+            <tr>
+              <td>#34304</td>
+              <td>
+                <div class="product">
+                  <img src="imge/Bag.png" alt="Bag" />
+                  <span>Bag</span>
+                </div>
+              </td>
+              <td>Brad Mason</td>
+              <td>06/09/2022</td>
+              <td>$899.95</td>
+              <td>Transfer Bank</td>
+              <td><span class="status Process">Process</span></td>
+              <td class="actions">
+                <button>
+                  <i
+                    class="fa-regular fa-pen-to-square"
+                    style="color: rgba(98, 77, 227, 1)"></i>
+                </button>
+                <button>
+                  <i
+                    class="fa-solid fa-trash"
+                    style="color: rgba(163, 13, 17, 1)"></i>
+                </button>
+              </td>
+            </tr>
+            <!-- 5 -->
+            <tr>
+              <td>#17188</td>
+              <td>
+                <div class="product">
+                  <img src="imge/Headset.png" alt="Headset" />
+                  <span>Headset</span>
+                </div>
+              </td>
+              <td>Sanderson</td>
+              <td>25/09/2022</td>
+              <td>$22.95</td>
+              <td>Cash on Delivery</td>
+              <td><span class="status Canceled">Canceled</span></td>
+              <td class="actions">
+                <button>
+                  <i
+                    class="fa-regular fa-pen-to-square"
+                    style="color: rgba(98, 77, 227, 1)"></i>
+                </button>
+                <button>
+                  <i
+                    class="fa-solid fa-trash"
+                    style="color: rgba(163, 13, 17, 1)"></i>
+                </button>
+              </td>
+            </tr>
+            <!-- 6 -->
+            <tr>
+              <td>#73003</td>
+              <td>
+                <div class="product">
+                  <img src="imge/Mouse.png" alt="Mouse" />
+                  <span>Mouse</span>
+                </div>
+              </td>
+              <td>Jun Redfern</td>
+              <td>04/10/2022</td>
+              <td>$54.95</td>
+              <td>Transfer Bank</td>
+              <td><span class="status delivered">Delivered</span></td>
+              <td class="actions">
+                <button>
+                  <i
+                    class="fa-regular fa-pen-to-square"
+                    style="color: rgba(98, 77, 227, 1)"></i>
+                </button>
+                <button>
+                  <i
+                    class="fa-solid fa-trash"
+                    style="color: rgba(163, 13, 17, 1)"></i>
+                </button>
+              </td>
+            </tr>
+            <!-- 7 -->
+            <tr>
+              <td>#58825</td>
+              <td>
+                <div class="product">
+                  <img src="imge/Clock.png" alt="Clock" />
+                  <span>Clock</span>
+                </div>
+              </td>
+              <td>Miriam Kidd</td>
+              <td>17/10/2022</td>
+              <td>$174.95</td>
+              <td>Transfer Bank</td>
+              <td><span class="status delivered">Delivered</span></td>
+              <td class="actions">
+                <button>
+                  <i
+                    class="fa-regular fa-pen-to-square"
+                    style="color: rgba(98, 77, 227, 1)"></i>
+                </button>
+                <button>
+                  <i
+                    class="fa-solid fa-trash"
+                    style="color: rgba(163, 13, 17, 1)"></i>
+                </button>
+              </td>
+            </tr>
+            <!-- 8 -->
+            <tr>
+              <td>$174.95</td>
+              <td>
+                <div class="product">
+                  <img src="imge/T-shirt.png" alt="T-shirt" />
+                  <span>T-shirt</span>
+                </div>
+              </td>
+              <td>Dominic</td>
+              <td>24/10/2022</td>
+              <td>$249.95</td>
+              <td>Cash on Delivery</td>
+              <td><span class="status delivered">Delivered</span></td>
+              <td class="actions">
+                <button>
+                  <i
+                    class="fa-regular fa-pen-to-square"
+                    style="color: rgba(98, 77, 227, 1)"></i>
+                </button>
+                <button>
+                  <i
+                    class="fa-solid fa-trash"
+                    style="color: rgba(163, 13, 17, 1)"></i>
+                </button>
+              </td>
+            </tr>
+            <!-- 9 -->
+            <tr>
+              <td>#89094</td>
+              <td>
+                <div class="product">
+                  <img src="imge/Monitor.png" alt="Monitor" />
+                  <span>Monitor</span>
+                </div>
+              </td>
+              <td>Monitor</td>
+              <td>01/11/2022</td>
+              <td>$899.95</td>
+              <td>Transfer Bank</td>
+              <td><span class="status Canceled">Canceled</span></td>
+              <td class="actions">
+                <button>
+                  <i
+                    class="fa-regular fa-pen-to-square"
+                    style="color: rgba(98, 77, 227, 1)"></i>
+                </button>
+                <button>
+                  <i
+                    class="fa-solid fa-trash"
+                    style="color: rgba(163, 13, 17, 1)"></i>
+                </button>
+              </td>
+            </tr>
+            <!-- 10 -->
+            <tr>
+              <td>#85252</td>
+              <td>
+                <div class="product">
+                  <img src="imge/Keyboard.png" alt="Keyboard" />
+                  <span>Keyboard</span>
+                </div>
+              </td>
+              <td>Poppy-Rose</td>
+              <td>22/11/2022</td>
+              <td>$6.948</td>
+              <td>Transfer Bank</td>
+              <td><span class="status Process">Process</span></td>
+              <td class="actions">
+                <button>
+                  <i
+                    class="fa-regular fa-pen-to-square"
+                    style="color: rgba(98, 77, 227, 1)"></i>
+                </button>
+                <button>
+                  <i
+                    class="fa-solid fa-trash"
+                    style="color: rgba(163, 13, 17, 1)"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+          <!--  -->
+        </table>
+        <!-- Pagination -->
+        <div class="pagination">
+          <span class="previous">Previous</span>
+          <button class="active">1</button>
+          <button>2</button>
+          <button>3</button>
+          <span class="next">Next</span>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
