@@ -169,3 +169,22 @@ form .button-group .continue {
 form .button-group .continue:hover {
   background: #6c5ce7;
 }
+/*  */
+.table {
+  text-decoration: none;
+  color: #6c5ce7;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 2px solid #6c5ce7;
+  border-radius: 5px;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table:hover {
+  color: #fff;
+  background-color: #6c5ce7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
